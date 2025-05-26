@@ -3,37 +3,39 @@ import { Mail, Phone, MessageCircle } from "lucide-react";
 
 export const Footer = () => {
 	return (
-		<footer className="bg-gray-900 text-white py-16 px-4">
+		<footer className="bg-gray-900 text-white py-10 md:py-16 px-4">
 			<div className="container mx-auto max-w-6xl">
-				<div className="grid md:grid-cols-4 gap-8 mb-12">
+				<div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-8 md:mb-12">
 					{/* Brand */}
-					<div className="col-span-1">
-						<div className="flex items-center space-x-2 mb-4">
-							<div className="w-8 h-8 bg-gradient-to-r from-bharat-600 to-bharat-700 rounded-lg flex items-center justify-center">
-								<span className="text-white font-bold text-sm">LG</span>
+					<div className="col-span-2 md:col-span-1 mb-4 md:mb-0">
+						<div className="flex items-center space-x-2 mb-3 md:mb-4">
+							<div className="w-7 h-7 md:w-8 md:h-8 bg-gradient-to-r from-bharat-600 to-bharat-700 rounded-lg flex items-center justify-center">
+								<span className="text-white font-bold text-xs md:text-sm">
+									LG
+								</span>
 							</div>
-							<span className="text-xl font-bold">Legal GPT</span>
+							<span className="text-lg md:text-xl font-bold">Legal GPT</span>
 						</div>
-						<p className="text-gray-400 text-sm leading-relaxed mb-4">
+						<p className="text-gray-400 text-xs md:text-sm leading-relaxed mb-3 md:mb-4">
 							Making legal documents understandable for every Indian citizen
 							through AI technology.
 						</p>
-						<div className="flex space-x-3">
+						<div className="flex space-x-2 md:space-x-3">
 							<a
 								href="#"
-								className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-bharat-600 transition-colors"
+								className="w-7 h-7 md:w-8 md:h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-bharat-600 transition-colors"
 							>
 								<span className="text-xs">f</span>
 							</a>
 							<a
 								href="#"
-								className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-bharat-600 transition-colors"
+								className="w-7 h-7 md:w-8 md:h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-bharat-600 transition-colors"
 							>
 								<span className="text-xs">t</span>
 							</a>
 							<a
 								href="#"
-								className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-bharat-600 transition-colors"
+								className="w-7 h-7 md:w-8 md:h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-bharat-600 transition-colors"
 							>
 								<span className="text-xs">in</span>
 							</a>
@@ -41,9 +43,11 @@ export const Footer = () => {
 					</div>
 
 					{/* Product */}
-					<div>
-						<h3 className="font-semibold mb-4">Product</h3>
-						<ul className="space-y-2 text-sm text-gray-400">
+					<div className="col-span-1">
+						<h3 className="font-semibold mb-2 md:mb-4 text-sm md:text-base">
+							Product
+						</h3>
+						<ul className="space-y-1 md:space-y-2 text-xs md:text-sm text-gray-400">
 							<li>
 								<a href="#" className="hover:text-white transition-colors">
 									Features
