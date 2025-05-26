@@ -1,8 +1,3 @@
-/* 
-  App-specific CSS
-  Note: Most styling can now be done with Tailwind CSS classes directly in the JSX
-*/
-
 #root {
   max-width: 1280px;
   margin: 0 auto;
